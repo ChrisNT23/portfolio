@@ -6,7 +6,7 @@ function StartPage() {
         <div className="startpage">
             <div className="content">
                 <p className="greeting">
-                    Hola, soy <span className="name">Christian Narvaéz</span>
+                    Hola, soy <span className="name">Christian</span>
                 </p>
                 <h1 className="title">Software Engineer</h1>
                 <p className="description">
@@ -23,40 +23,109 @@ function StartPage() {
                     <a href="mailto:christian@example.com">
                         <img src="/icons/gmail.svg" alt="Email" className="icon" />
                     </a>
-                </div>                
+                </div>
+                {/* Botón de Descargar CV */}
+                <div className="download-cv">
+                    <a href="/view-cv" target="_blank" rel="noopener noreferrer" className="cv-button">
+                        Descargar CV
+                    </a>
+                </div>
+
+
             </div>
+
             {/* Nueva sección de Tecnologías */}
             <div className="technologies-section">
-                    <div className="carousel">
-                        <p className="carousel-text">
-                            TECNOLOGÍAS ★  TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★
-                        </p>
+                <div className="carousel">
+                    <p className="carousel-text">
+                        ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS                     ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS
+                        ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS
+
+                    </p>
+                </div>
+                <div className="technologies-grid">
+                    <div className="technology-card">
+                        <img src="/icons/icons8-html-5-512.png" alt="HTML" className="tech-icon" />
+                        HTML
                     </div>
-                    <div className="technologies-grid">
-                        <div className="technology-card">HTML</div>
-                        <div className="technology-card">CSS</div>
-                        <div className="technology-card">JavaScript</div>
-                        <div className="technology-card">React</div>
-                        <div className="technology-card">Express.js</div>
-                        <div className="technology-card">Tailwind</div>
-                        <div className="technology-card">Git</div>
-                        <div className="technology-card">Figma</div>
-                        <div className="technology-card">Selenium</div>
-                        <div className="technology-card">Cucumber</div>
-                        <div className="technology-card">Jmeter</div>
-                        <div className="technology-card">Angular</div>
-                        <div className="technology-card">Vue.js</div>
-                        <div className="technology-card">Postman</div>
-                        <div className="technology-card">Python</div>
-                        <div className="technology-card">Jira</div>
-                        <div className="technology-card">MySQL</div>
-                        <div className="technology-card">Firebase</div>
-                        <div className="technology-card">MongoDB</div>
-                        <div className="technology-card">PostgreSQL</div>
-                       
-                        
+                    <div className="technology-card">
+                        <img src="/icons/cssicon.png" alt="CSS" className="tech-icon" />
+                        CSS
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-javascript-512.png" alt="JavaScript" className="tech-icon" />
+                        JavaScript
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-reaccionar-nativo-512.png" alt="React" className="tech-icon" />
+                        React
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-expresar-js-512.png" alt="Express.js" className="tech-icon" />
+                        Express.js
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-tailwind-css-512.png" alt="Tailwind" className="tech-icon" />
+                        Tailwind
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-git-512.png" alt="Git" className="tech-icon" />
+                        Git
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-figura-512.png" alt="Figma" className="tech-icon" />
+                        Figma
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/selenium.png" alt="Selenium" className="tech-icon" />
+                        Selenium
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/cucumber-logo-black-and-white.png" alt="Cucumber" className="tech-icon" />
+                        Cucumber
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/apachejmeter.svg" alt="Jmeter" className="tech-icon" />
+                        Jmeter
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-angular-512.png" alt="Angular" className="tech-icon" />
+                        Angular
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-vuetificar-512.png" alt="Vue.js" className="tech-icon" />
+                        Vue.js
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-cartero-api-512.png" alt="Postman" className="tech-icon" />
+                        Postman
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-python-512.png" alt="Python" className="tech-icon" />
+                        Python
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/jira.png" alt="Jira" className="tech-icon" />
+                        Jira
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-mysql-512.png" alt="MySQL" className="tech-icon" />
+                        MySQL
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-firebase-512.png" alt="Firebase" className="tech-icon" />
+                        Firebase
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/mongodb-icon-size_512.png" alt="MongoDB" className="tech-icon" />
+                        MongoDB
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-postgresql-512.png" alt="PostgreSQL" className="tech-icon" />
+                        PostgreSQL
                     </div>
                 </div>
+            </div>
         </div>
     );
 }

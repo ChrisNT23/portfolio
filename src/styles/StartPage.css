@@ -31,7 +31,7 @@ body {
 }
 
 .title {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 700;
   color: #000;
   margin: 1rem 0;
@@ -99,19 +99,22 @@ body {
   display: inline-block;
   font-size: 1rem;
   font-weight: bold;
-  animation: marquee 10s linear infinite;
+  animation: marquee 45s linear infinite;
   color: #000000;
   letter-spacing: 2px;
+  white-space: nowrap; /* Asegura que el texto no se rompa en varias líneas */
 }
 
+/* Animación de desplazamiento continuo */
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0); /* Comienza desde su posición inicial */
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Se desplaza hacia la izquierda */
   }
 }
+
 
 /* Grid de tecnologías */
 .technologies-grid {
@@ -142,6 +145,63 @@ body {
   transform: scale(1.1);
   background-color: #e3e3e3;
 }
+
+.tech-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.technology-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px dashed #000;
+  margin: 5px;
+}
+
+/*Estilo boton descarga CV*/
+/* Contenedor del botón de Descargar CV */
+.download-cv {
+  margin: 20px 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+  
+}
+
+/* Estilo del botón */
+.cv-button {
+  background-color: #32485f; /* Color azul oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 15px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  text-decoration: none; /* Quita subrayado del enlace */
+  transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+/* Hover del botón */
+.download-cv-button:hover {
+  background-color: #2a3c4f; /* Oscurece el color al pasar el mouse */
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+  .download-cv {
+      margin: 15px 0;
+  }
+  .download-cv-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
 
 /* --- Media Queries --- */
 
