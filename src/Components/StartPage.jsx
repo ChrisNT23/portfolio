@@ -1,38 +1,50 @@
 import React from "react";
+import SplineEmbed from './SplineEmbed.jsx';
 import "../styles/StartPage.css";
 
 function StartPage() {
+    const handleDownloadCV = () => {
+        // Abre el PDF en una nueva pestaña
+        window.open('/files/CV_Christian_Narvaez.pdf', '_blank');
+    };
     return (
         <div className="startpage">
-            <div className="content">
-                <p className="greeting">
-                    Hola, soy <span className="name">Christian</span>
-                </p>
-                <h1 className="title">Software Engineer</h1>
-                <p className="description">
-                    Soy <span className="highlight">Ingeniero de Software</span>,
-                    desarrollador y analista QA
-                </p>
-                <div className="icons">
-                    <a href="https://www.linkedin.com/in/christian-narv%C3%A1ez-9a5232247/" target="_blank" rel="noopener noreferrer">
-                        <img src="/icons/linkedin.svg" alt="LinkedIn" className="icon" />
-                    </a>
-                    <a href="https://github.com/ChrisNT23" target="_blank" rel="noopener noreferrer">
-                        <img src="/icons/github.svg" alt="GitHub" className="icon" />
-                    </a>
-                    <a href="mailto:christian@example.com">
-                        <img src="/icons/gmail.svg" alt="Email" className="icon" />
-                    </a>
-                </div>
-                {/* Botón de Descargar CV */}
-                <div className="download-cv">
-                    <a href="/view-cv" target="_blank" rel="noopener noreferrer" className="cv-button">
-                        Descargar CV
-                    </a>
+            <div className="columns">
+                {/* Columna 1: Información personal */}
+                <div className="column content">
+                    <p className="greeting">
+                        Hola, soy <span className="name">Christian</span>
+                    </p>
+                    <h1 className="title">Software Engineer</h1>
+                    <p className="description">
+                        Soy <span className="highlight">Ingeniero de Software</span>,
+                        desarrollador y analista QA
+                    </p>
+                    <div className="icons">
+                        <a href="https://www.linkedin.com/in/christian-narv%C3%A1ez-9a5232247/" target="_blank" rel="noopener noreferrer">
+                            <img src="/icons/linkedin.svg" alt="LinkedIn" className="icon" />
+                        </a>
+                        <a href="https://github.com/ChrisNT23" target="_blank" rel="noopener noreferrer">
+                            <img src="/icons/github.svg" alt="GitHub" className="icon" />
+                        </a>
+                        <a href="mailto:christian@example.com">
+                            <img src="/icons/gmail.svg" alt="Email" className="icon" />
+                        </a>
+                    </div>
+                    {/* Botón de Descargar CV */}
+                    <div className="download-cv">
+                        <button onClick={handleDownloadCV} className="cv-button">
+                            Descargar CV
+                        </button>
+                    </div>
                 </div>
 
-
+                {/* Columna 2: Animación Spline */}
+                <div className="column spline-container">
+                    <SplineEmbed />
+                </div>
             </div>
+
 
             {/* Nueva sección de Tecnologías */}
             <div className="technologies-section">

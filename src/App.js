@@ -18,8 +18,8 @@ function App() {
           path="/"
           element={
             <div>
-              <StartPage />
-              <Header />
+               <Header />
+              <StartPage />              
               <Projects />
               <About />
               <Contact />
@@ -29,8 +29,7 @@ function App() {
         />
 
         {/* Ruta para la vista del PDF */}
-        <Route path="/view-cv" element={<PdfViewer />} />
-      </Routes>
+        <Route path="/files/CV_Christian_Narvaez.pdf" element={<PdfViewer />} />      </Routes>
     </Router>
   );
 }

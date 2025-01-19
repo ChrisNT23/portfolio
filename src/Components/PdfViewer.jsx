@@ -1,18 +1,16 @@
-// src/Components/PdfViewer.jsx
-import React from "react";
+import React from 'react';
 
-const PdfViewer = () => {
-  return (
-    <div style={{ textAlign: "center" }}>
-      <iframe
-        src="/files/CV_Christian_Narvaez.pdf"
-        width="100%"
-        height="1000px"
-        title="CV de Christian Narváez"
-        style={{ border: "none" }}
-      />
-    </div>
-  );
-};
+function PdfViewer() {
+    return (
+        <iframe
+    src={`${process.env.PUBLIC_URL}/files/CV_Christian_Narvaez.pdf`}
+    title="CV Viewer"
+    width="100%"
+    height="100%"
+    style={{ border: 'none' }}
+/>
+
+    );
+}
 
 export default PdfViewer;

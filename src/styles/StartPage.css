@@ -11,13 +11,30 @@ body {
   align-items: center;  
   padding: 0 10%;
   background-color: #f6f4f3;
-  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  box-sizing: border-box; 
   margin-top: 80px;
-}
+} 
 
-/* Content Section */
+ /*
+.startpage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  background: url('/src/images/universe.jpg') no-repeat center center fixed;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-top: 80px;
+  color: white; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+}  
+*/
+
+
 .content {
   max-width: 50%;  
+  text-align: left;
 }
 
 .greeting {
@@ -42,6 +59,46 @@ body {
   color: #555;
   margin: 1.5rem 0;
   
+}
+
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.column {
+  width: 48%; /* Ajusta este valor si quieres más o menos espacio para cada columna */
+}
+
+.spline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Opcional: Ajustes para la sección de iconos */
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Botón de Descargar CV */
+.cv-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .highlight {
@@ -211,6 +268,14 @@ body {
     flex-direction: column; /* Cambia la distribución a columna */
     padding: 20px;
   }
+  .columns {
+    flex-direction: column; /* Asegura que las columnas estén apiladas */
+  }
+
+  .column {
+    width: 100%; /* Las columnas ocupan todo el ancho */
+    margin-bottom: 20px;
+  }
 
   .content {
     max-width: 100%; /* Permite que ocupe toda la pantalla */
@@ -238,6 +303,11 @@ body {
     width: 150px;
     height: 150px;
   }
+
+  /* Ocultar el spline-container en pantallas pequeñas */
+  .spline-container {
+    display: none;
+  }
 }
 
 /* Para móviles y pantallas pequeñas */
@@ -246,6 +316,14 @@ body {
     flex-direction: column; /* Coloca los elementos en columna */
     align-items: center;
     padding: 20px;
+  }
+  .columns {
+    flex-direction: column; /* Asegura que las columnas estén apiladas */
+  }
+
+  .column {
+    width: 100%; /* Las columnas ocupan todo el ancho */
+    margin-bottom: 20px;
   }
 
   .content {
@@ -279,5 +357,10 @@ body {
   .graphic {
     width: 120px;
     height: 120px;
+  }
+
+  /* Ocultar el spline-container en pantallas móviles */
+  .spline-container {
+    display: none;
   }
 }
