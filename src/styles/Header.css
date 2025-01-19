@@ -1,0 +1,37 @@
+/* Estilos para el Header */
+header {
+  position: fixed;       /* Fija el header en la parte superior */
+  top: 0;                /* Lo pone en la parte superior de la pantalla */
+  left: 0;
+  width: 100%;           /* Asegura que ocupe todo el ancho */
+  background-color: #f6f4f3;
+  padding: 20px 0;
+  z-index: 1000;         /* Asegura que el header esté por encima de otros elementos */
+  font-family: 'Playfair Display', serif; /* Establece la fuente elegante */
+}
+
+header h1 {
+  text-align: right;     /* Alinea el texto a la derecha */
+  font-size: 2.5rem;
+  color: #333;
+  margin-right: 20px;    /* Le da un pequeño margen a la derecha */
+}
+
+nav {
+  text-align: right;     /* Alinea los enlaces a la derecha */
+  background-color: #f6f4f3;  /* Beige */
+  padding: 10px 0;
+}
+
+nav a {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: 'Playfair Display', serif; /* Aplica la misma fuente en los enlaces */
+}
+
+nav a:hover {
+  color: #ff9900;
+}

@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.startpage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 0 10%;
+  background-color: #f6f4f3;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  margin-top: 80px;
+}
+
+/* Content Section */
+.content {
+  max-width: 50%;  
+}
+
+.greeting {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.name {
+  font-weight: bold;
+  color: #000;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #000;
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1.5rem 0;
+  
+}
+
+.highlight {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Graphic Section */
+.graphic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Sección de Tecnologías */
+.technologies-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+  margin-top: 50px;  
+}
+
+/* Carrusel de letras */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel-text {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  animation: marquee 10s linear infinite;
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Grid de tecnologías */
+.technologies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.technology-card {
+  width: 120px;
+  height: 45px;
+  border: 2px dashed #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.technology-card:hover {
+  transform: scale(1.1);
+  background-color: #e3e3e3;
+}
+
+/* --- Media Queries --- */
+
+/* Para tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .startpage {
+    flex-direction: column; /* Cambia la distribución a columna */
+    padding: 20px;
+  }
+
+  .content {
+    max-width: 100%; /* Permite que ocupe toda la pantalla */
+    text-align: center;
+  }
+
+  .title {
+    font-size: 4rem; /* Reduce el tamaño del texto */
+    margin: 1rem 0;
+  }
+
+  .greeting {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .graphic {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Para móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  .startpage {
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content {
+    max-width: 100%; /* Ajusta el ancho al 100% */
+    text-align: center; /* Centra el contenido */
+  }
+
+  .title {
+    font-size: 2.5rem; /* Reduce el tamaño del texto */
+  }
+
+  .greeting {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+
+  .icons {
+    gap: 0.5rem; /* Reduce el espacio entre íconos */
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .graphic {
+    width: 120px;
+    height: 120px;
+  }
+}
