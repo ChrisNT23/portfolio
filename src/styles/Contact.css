@@ -1,33 +1,90 @@
-/* Estilos para la sección de contacto */
-#contact {
-    padding: 50px;
-    background-color: #333;
-    color: white;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #000;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h2 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #546a7b;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #36454f;
+}
+
+.contact-right {
+  flex: 1;
+  text-align: right;
+}
+
+.contact-right h3 {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #546a7b;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
     text-align: center;
   }
-  
-  #contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+
+  .contact-left,
+  .contact-right {
+    flex: none;
+    margin-bottom: 1.5rem;
   }
-  
-  #contact p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+
+  .contact-right {
+    text-align: center;
   }
-  
-  #contact a {
-    color: #ff9900;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-bottom: 2px solid #ff9900;
-    transition: all 0.3s ease;
-  }
-  
-  #contact a:hover {
-    color: #fff;
-    background-color: #ff9900;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
+}
