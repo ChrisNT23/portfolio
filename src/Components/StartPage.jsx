@@ -1,6 +1,8 @@
 import React from "react";
 import SplineEmbed from './SplineEmbed.jsx';
 import "../styles/StartPage.css";
+import NeuralNetworkBackground from "./NeuralNetworkBackground";
+
 
 function StartPage() {
     const handleDownloadCV = () => {
@@ -9,6 +11,8 @@ function StartPage() {
     };
     return (
         <div className="startpage">
+             <NeuralNetworkBackground />
+  
             <div className="columns">
                 {/* Columna 1: Información personal */}
                 <div className="column content">

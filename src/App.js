@@ -8,28 +8,66 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import PdfViewer from "./Components/PdfViewer"; // Nuevo componente para el PDF
+import { motion } from "framer-motion";
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 }, // Empieza opaco y abajo
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Ruta principal con todas las secciones */}
         <Route
           path="/"
           element={
             <div>
-               <Header />
-              <StartPage />              
-              <Projects />
-              <About />
-              <Contact />
+              <Header />
+
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+                variants={sectionVariants}
+              >
+                <StartPage />
+              </motion.div>
+
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+                variants={sectionVariants}
+              >
+                <Projects />
+              </motion.div>
+
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+                variants={sectionVariants}
+              >
+                <About />
+              </motion.div>
+
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.2 }}
+                variants={sectionVariants}
+              >
+                <Contact />
+              </motion.div>
+
               <Footer />
             </div>
           }
         />
 
-        {/* Ruta para la vista del PDF */}
-        <Route path="/files/CV_Christian_Narvaez.pdf" element={<PdfViewer />} />      </Routes>
+        <Route path="/files/CV_Christian_Narvaez.pdf" element={<PdfViewer />} />
+      </Routes>
     </Router>
   );
 }
