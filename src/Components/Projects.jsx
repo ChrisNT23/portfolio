@@ -6,7 +6,7 @@ const Projects = () => {
     <section id="projects">
     <section className="projects">
       <h2 className="projects-title">
-      <img src="/icons/icons8-oficina-en-casa.gif" alt="HTML" className="light-icon" /> Proyectos
+      <img src="/icons/icons8-código.gif" alt="HTML" className="light-icon" /> Proyectos
       </h2>
 
       {/* Proyecto 1 */}
@@ -44,7 +44,7 @@ const Projects = () => {
       {/* Proyecto 2 */}
       <div className="project">
         <div className="project-info">
-          <h3 className="project-title">2. Mikhuna</h3>
+          <h3 className="project-title">2. E-commerce</h3>
           <p className="project-description">
             Plataforma para monitorear la huella de carbono en empresas y
             sugerir prácticas sostenibles basadas en datos analíticos.
@@ -75,7 +75,7 @@ const Projects = () => {
       {/* Proyecto 3 */}
       <div className="project">
         <div className="project-info">
-          <h3 className="project-title">3. Artify</h3>
+          <h3 className="project-title">3. Página web de noticias</h3>
           <p className="project-description">
             Aplicación web que permite a artistas crear galerías interactivas
             y compartir sus obras utilizando tecnologías de realidad aumentada.

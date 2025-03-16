@@ -142,6 +142,76 @@ function StartPage() {
                     </div>
                 </div>
             </div>
+
+
+            <div className="technologies-section">
+                <div className="carousel">
+                    <p className="carousel-text">
+                        ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS  ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS                     ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS ★ TECNOLOGÍAS
+                        ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS  ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS ★ SOFT SKILLS
+
+                    </p>
+                </div>
+                <div className="technologies-grid">
+                    <div className="technology-card">
+                        <img src="/icons/icons8-html-5-512.png" alt="HTML" className="tech-icon" />
+                        Pensamiento analítico
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/cssicon.png" alt="CSS" className="tech-icon" />
+                        Atención al detalle
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-javascript-512.png" alt="JavaScript" className="tech-icon" />
+                        Resolución de problemas
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-reaccionar-nativo-512.png" alt="React" className="tech-icon" />
+                        Gestión del tiempo
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-expresar-js-512.png" alt="Express.js" className="tech-icon" />
+                        Trabajo en equipo
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-tailwind-css-512.png" alt="Tailwind" className="tech-icon" />
+                        Comunicación efectiva
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-git-512.png" alt="Git" className="tech-icon" />
+                        Adaptabilidad 
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-figura-512.png" alt="Figma" className="tech-icon" />
+                        Liderazgo y toma de decisiones
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/selenium.png" alt="Selenium" className="tech-icon" />
+                        Mentalidad de mejora continua
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/cucumber-logo-black-and-white.png" alt="Cucumber" className="tech-icon" />
+                        Proactividad 
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/apachejmeter.svg" alt="Jmeter" className="tech-icon" />
+                        Paciencia 
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-angular-512.png" alt="Angular" className="tech-icon" />
+                        Aprendizaje rápido
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-vuetificar-512.png" alt="Vue.js" className="tech-icon" />
+                        Empatía 
+                    </div>
+                    <div className="technology-card">
+                        <img src="/icons/icons8-vuetificar-512.png" alt="Vue.js" className="tech-icon" />
+                        Perseverancia 
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     );
 }
